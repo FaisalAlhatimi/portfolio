@@ -20,8 +20,12 @@ body {
   }
   
   header.hero {
+    background: linear-gradient(-45deg, #1a1a1a, #222, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
     text-align: center;
     padding: 100px 20px;
+    width: 100%;
   }
   
   header.hero h1 {
@@ -155,5 +159,17 @@ body {
   .button {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
