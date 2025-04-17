@@ -57,12 +57,22 @@ body {
     margin: 1rem 0;
   }
 
-  .icons i {
+  .icons i,
+  #contact i {
     font-size: 3.5rem;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.5rem;
     transition: transform 0.3s;
-    color: white; /* Fallback if icon doesn’t have its own color */
+    color: white; /* fallback for monochrome icons */
   }
 
-  .icons i:hover {
+  .icons i:hover,
+  #contact i:hover {
     transform: scale(1.2);
+  }
+
+  .ubuntu-icon {
+    color: #e95420;
   }
