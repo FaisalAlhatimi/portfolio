@@ -58,7 +58,7 @@ body {
   }
 
   .icons i {
-    font-size: 3rem;
+    font-size: 3.5rem;
     transition: transform 0.3s;
     color: white; /* Fallback if icon doesn’t have its own color */
   }
