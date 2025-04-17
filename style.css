@@ -50,3 +50,19 @@ body {
   .job {
     margin-bottom: 30px;
   }
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .icons i {
+    font-size: 3rem;
+    transition: transform 0.3s;
+    color: white; /* Fallback if icon doesn’t have its own color */
+  }
+
+  .icons i:hover {
+    transform: scale(1.2);
+  }
