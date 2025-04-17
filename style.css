@@ -116,3 +116,35 @@ body {
   z-index: 2;
   transition: all .3s ease;
 }
+
+/* Phone Support*/
+@media screen and (max-width: 600px) {
+  body {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .icons i,
+  #contact i,
+  .icon-img {
+    font-size: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
