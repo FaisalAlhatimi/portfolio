@@ -45,4 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 0.6,
     ease: "elastic.out(1, 0.5)",
   });
+
+  gsap.utils.toArray(".icons i, #contact i").forEach(icon => {
+    icon.style.willChange = "transform";
+
+    icon.addEventListener("mouseenter", () => {
+      gsap.to(icon, { scale: 1.2, duration: 0.05, ease: "power1.out" });
+    });
+
+    icon.addEventListener("mouseleave", () => {
+      gsap.to(icon, { scale: 1,   duration: 0.05, ease: "power1.out" });
+    });
+  });
 });
