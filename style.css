@@ -180,4 +180,32 @@ body {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+
+  .certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .certificate-img {
+    max-width: 150px; /* Adjust size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .certificate-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+
+  @media screen and (max-width: 600px) {
+    .certificate-img {
+      max-width: 100px;
+    }
+  }
 }
