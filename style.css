@@ -190,7 +190,7 @@ body {
   }
 
   .certificate-img {
-    max-width: 150px; /* Adjust size */
+    max-width: 120px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
