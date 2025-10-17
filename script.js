@@ -19,21 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  gsap.utils.toArray(".certificate-img").forEach((img, i) => {
-  gsap.from(img, {
-    scrollTrigger: {
-      trigger: img,
-      start: "top 85%",
-      toggleActions: "play none none none",
-    },
-    y: 30,
-    opacity: 0,
-    duration: 0.6,
-    delay: i * 0.1,          // Adjustable 
-    ease: "back.out(1.7)",
-  });
-});
-
   gsap.utils.toArray("#tech-stack .icons i").forEach((icon, i) => {
     gsap.from(icon, {
       scrollTrigger: {
